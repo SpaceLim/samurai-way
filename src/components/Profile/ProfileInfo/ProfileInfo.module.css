@@ -5,11 +5,17 @@
 .ava {
     display: inline-block;
     padding: 10px;
-    width: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: 47%;
+    height: 168px;
+    width: 168px;
 }
 .ava img {
     width: 100%;
     height: auto;
+    border-radius: 50%;
 }
 .descriptionBlock{
     padding: 10px;
