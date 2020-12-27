@@ -1,0 +1,14 @@
+.item  {
+    color: rgba(199, 180, 23, 0.89);
+}
+.item p{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+.item img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}

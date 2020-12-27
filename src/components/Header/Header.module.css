@@ -1,0 +1,21 @@
+.header {
+    grid-area: h;
+    background-color: green;
+}
+.header img{
+    width: 100px;
+}
+.loginBlock{
+    float: right;
+
+}
+
+.loginBlock {
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.7s;
+}
+/*.loginBlock:hover{*/
+    /*color: gold;*/
+    /*transition-duration: 0.7s;*/
+/*}*/
