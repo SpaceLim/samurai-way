@@ -27,10 +27,7 @@ class UsersContainer extends React.Component {
     onPageChanged = (pageNumber) => {
         this.props.setCurrentPage(pageNumber);
         this.props.toogleIsFetching(true);
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${pageNumber}&count=${this.props.pageSize}`,
-            {
-                withCredentials: true
-            })
+
         usersAPI.getUsers(pageNumber, this.props.pageSize)
             .then(data => {
                 this.props.toogleIsFetching(false);
