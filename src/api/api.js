@@ -16,8 +16,7 @@ export const usersAPI = {
                 return response.data;
             });
     },
-
-    usersProfile(userId) {
+    getProfile(userId) {
         return instance.get(`profile/ ` + userId,)
 
 
@@ -26,11 +25,17 @@ export const usersAPI = {
             })
 
     },
-    followUser(u) {
-        return instance.delete(`follow/${u.id}`, {})
+    followUser(userId) {
+        return instance.post(`https://social-network.samuraijs.com/api/1.0/follow/${userId}` )
     },
-    unfollowUser(u) {
-        return instance.post(`follow/${u.id}`, {}, {})
+    unfollowUser(userId) {
+        return instance.delete(`follow/${userId}`)
     },
 
+}
+export const authAPI = {
+    me() {
+        return instance.get(`auth/me/`)
+
+    }
 }
