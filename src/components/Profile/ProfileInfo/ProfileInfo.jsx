@@ -3,6 +3,7 @@ import s from './ProfileInfo.module.css';
 import Preloader from "../../common/Preloader/Preloader";
 import Smile from "./../../../assets/images/smile.png";
 import userPhoto from "../../../assets/images/user.png";
+import ProfileStatus from "./ProfileStatus"
 
 const ProfileInfo = (props) => {
     if (!props.profile) {
@@ -11,11 +12,11 @@ const ProfileInfo = (props) => {
 
     return (
         <div>
-            <div className={s.content}>
-                <img
-                    src="https://under35.me/wp-content/uploads/2016/09/%D0%9F%D0%B0%D1%80%D0%BA-%D1%80%D0%B0%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2-%D0%94%D1%83%D0%B1%D0%B0%D0%B8-IMG-Worlds-of-Adventure-14.jpg"
-                    alt=""/>
-            </div>
+            {/*<div className={s.content}>*/}
+                {/*<img*/}
+                    {/*src="https://under35.me/wp-content/uploads/2016/09/%D0%9F%D0%B0%D1%80%D0%BA-%D1%80%D0%B0%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2-%D0%94%D1%83%D0%B1%D0%B0%D0%B8-IMG-Worlds-of-Adventure-14.jpg"*/}
+                    {/*alt=""/>*/} 
+            {/*</div>*/}
                <div className={s.ava}><img src={props.profile.photos.large !=null ? props.profile.photos.large : userPhoto }  alt=""/></div>
             <div className={s.descriptionBlock}>
                 <h2>{props.profile.fullName}</h2>
@@ -42,7 +43,7 @@ const ProfileInfo = (props) => {
                 <div className={s.about}>
                     <p>{props.profile.aboutMe}</p>
                 </div>
-                ava + description
+                <ProfileStatus status={"Hello my friends"}/>
             </div>
         </div>
     )
