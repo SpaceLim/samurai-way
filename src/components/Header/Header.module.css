@@ -15,6 +15,15 @@
     text-decoration: none;
     transition-duration: 0.7s;
 }
+.loginBlock a {
+    color: #fff;
+    text-decoration: none;
+    transition-duration: 2s;
+}
+.loginBlock a:hover{
+    transition-duration: 2s;
+    color: gold;
+}
 /*.loginBlock:hover{*/
     /*color: gold;*/
     /*transition-duration: 0.7s;*/
